@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lista afazeres</title>
+    <link rel="shortcut icon" href="" type="" />
+    <meta name="description" content="Lista para adicionar afazeres" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <!--viewport para designers responsivos (mobo), content é a configuração-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#131212" />
+</head>
+
+<body class="fullscreen">
+    <div class="container">
+        <h1 class="titulo">Oque tenho para fazer?</h1>
+        <form name="form_main">
+        <div>
+           
+                <input type="text" id="descricao" name="descricao" placeholder="Descrição..."><button id="botao"
+                    type="button" onclick="adicionar()">Adicionar</button>
+        </div>
+
+        <div><input type="date" id="data" name="data" placeholder="data..."><button onclick="data()">Adicionar</button>
+        </div>
+        </form>
+    </div>
+
+    <div class="card">
+        <h1>Afazeres</h1>
+
+        <div>
+            <h1 id="tarefa"></h1><button>Apagar</button>
+            <h1 id="data_adicionada"></h1><button>Apagar</button>
+        </div>
+    </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
